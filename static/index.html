@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Черный список сотрудников</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Черный список сотрудников отеля</h1>
+
+    <section>
+        <h2>Добавить сотрудника</h2>
+        <form id="employeeForm">
+            <input type="text" id="name" placeholder="Имя сотрудника" required>
+            <textarea id="reason" placeholder="Причина внесения" required></textarea>
+            <input type="file" id="photo" accept="image/*">
+            <button type="submit">Добавить</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Поиск</h2>
+        <input type="text" id="searchInput" placeholder="Введите имя для поиска">
+    </section>
+
+    <section>
+        <h2>Список</h2>
+        <ul id="employeeList"></ul>
+    </section>
+
+    <p><a href="/login">Войти как администратор</a> | <a href="/logout">Выйти</a></p>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
